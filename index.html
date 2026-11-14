@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anisha Fabric | Everyday elegance</title>
+<meta name="description" content="Discover beautiful kurtis at Anisha Fabric.">
+<style>
+:root{--ink:#28221f;--muted:#766b64;--cream:#fbf7f1;--rose:#a94f61;--rose2:#7f3547;--line:#eadfd7;--gold:#c49a5a}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}
+.topline{background:#7f3547;color:#fff;text-align:center;padding:9px 12px;font-size:12px;letter-spacing:.08em}
+header{position:sticky;top:0;background:#fff;z-index:10;border-bottom:1px solid var(--line)}
+.head{max-width:1200px;margin:auto;padding:17px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-family:Georgia,serif;font-size:27px;letter-spacing:.11em;color:#7f3547;font-weight:bold}.brand small{display:block;font:9px Arial;letter-spacing:.28em;text-align:center;color:#8e8178;margin-top:4px}
+nav{display:flex;gap:25px;font-size:13px;letter-spacing:.04em}nav a:hover{color:var(--rose)}
+.actions{display:flex;align-items:center;gap:15px}.iconbtn{border:0;background:none;cursor:pointer;font-size:20px;position:relative}.count{position:absolute;top:-7px;right:-9px;background:var(--rose);color:#fff;border-radius:50%;font-size:10px;min-width:17px;height:17px;display:grid;place-items:center}
+.hero{max-width:1200px;margin:24px auto 0;padding:0 22px}.hero-inner{min-height:420px;background:linear-gradient(90deg,rgba(33,20,19,.68),rgba(33,20,19,.08)),url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1800&q=85') center 38%/cover;display:flex;align-items:center;color:#fff;padding:clamp(28px,7vw,85px);border-radius:3px}
+.hero-copy{max-width:460px}.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase}.hero h1{font:clamp(38px,5vw,64px)/1.04 Georgia,serif;margin:16px 0}.hero p{line-height:1.7;font-size:14px;max-width:380px}.primary{display:inline-block;background:var(--rose);color:#fff;border:0;padding:14px 23px;letter-spacing:.1em;text-transform:uppercase;font-size:11px;cursor:pointer;margin-top:14px}.primary:hover{background:var(--rose2)}
+.perks{max-width:1100px;margin:24px auto;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 22px}.perk{text-align:center;padding:14px 8px;border:1px solid var(--line);font-size:12px;color:var(--muted)}.perk b{display:block;color:var(--ink);font-size:12px;margin-bottom:5px;letter-spacing:.06em}
+.section{max-width:1200px;margin:55px auto;padding:0 22px}.section-head{text-align:center;margin-bottom:25px}.section-head .eyebrow{color:var(--rose)}h2{font:36px Georgia,serif;font-weight:normal;margin:10px 0}.sub{font-size:13px;color:var(--muted)}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:22px 0}.search{border:1px solid var(--line);padding:11px 13px;min-width:220px;outline-color:var(--rose)}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:#fff;padding:10px 14px;font-size:11px;cursor:pointer}.filter.active,.filter:hover{background:#7f3547;color:#fff;border-color:#7f3547}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.product{min-width:0}.photo{position:relative;background:var(--cream);aspect-ratio:3/4;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s}.product:hover .photo img{transform:scale(1.04)}.tag{position:absolute;top:12px;left:12px;background:#fff;padding:7px 9px;font-size:9px;letter-spacing:.1em}.add{position:absolute;bottom:12px;left:12px;right:12px;border:0;background:rgba(255,255,255,.95);padding:12px;text-transform:uppercase;letter-spacing:.1em;font-size:10px;cursor:pointer}.add:hover{background:var(--rose);color:#fff}.pname{font:18px Georgia,serif;margin:13px 0 6px}.meta{font-size:12px;color:var(--muted)}.price{font-size:14px;margin-top:8px}.old{text-decoration:line-through;color:#9b918b;margin-left:7px;font-size:12px}
+.story{background:var(--cream);padding:45px 22px;text-align:center}.story p{max-width:620px;margin:12px auto;color:var(--muted);font-size:14px;line-height:1.8}
+footer{background:#2e2524;color:#fff;padding:38px 22px;text-align:center;margin-top:45px}.footbrand{font:25px Georgia,serif;letter-spacing:.12em}.footnote{font-size:12px;color:#d6c9c1;line-height:1.8;margin-top:13px}
+.drawer-bg{position:fixed;inset:0;background:#0006;z-index:20;display:none}.drawer{position:fixed;right:0;top:0;height:100%;width:min(420px,100%);background:#fff;z-index:21;padding:23px;transform:translateX(105%);transition:.25s;overflow:auto}.drawer.open{transform:translateX(0)}.drawer-bg.open{display:block}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:15px}.cartline{display:flex;gap:13px;padding:16px 0;border-bottom:1px solid var(--line)}.cartline img{width:74px;height:92px;object-fit:cover}.cartline b{font:16px Georgia,serif}.cartline small{display:block;color:var(--muted);margin:6px 0}.qty{display:flex;gap:10px;align-items:center;margin-top:8px}.qty button{border:1px solid var(--line);background:white;width:25px;height:25px;cursor:pointer}.total{display:flex;justify-content:space-between;padding:18px 0;font-weight:bold}.empty{color:var(--muted);text-align:center;padding:45px 0;font-size:14px}
+@media(max-width:850px){nav{gap:12px}.products{grid-template-columns:repeat(2,1fr)}.hero-inner{min-height:360px}.toolbar{align-items:stretch;flex-direction:column}.search{width:100%}}
+@media(max-width:560px){.head{padding:13px 15px}.brand{font-size:21px}nav{display:none}.hero{padding:0 12px;margin-top:12px}.hero-inner{min-height:390px;padding:25px}.perks{padding:0 12px;grid-template-columns:1fr}.section{padding:0 14px;margin:42px auto}.products{gap:16px 10px}.pname{font-size:16px}.section-head h2{font-size:30px}.filters{overflow:auto;flex-wrap:nowrap}.filter{white-space:nowrap}}
+</style>
+</head>
+<body>
+<div class="topline">WELCOME TO ANISHA FABRIC · ELEGANCE FOR EVERYDAY</div>
+<header><div class="head">
+<a class="brand" href="#">ANISHA FABRIC<small>ETHNIC WEAR • TIMELESS STYLE</small></a>
+<nav><a href="#home">HOME</a><a href="#collection">SHOP KURTIS</a><a href="#story">OUR STORY</a><a href="#contact">CONTACT</a></nav>
+<div class="actions"><button class="iconbtn" aria-label="Open cart" onclick="openCart()">♧<span class="count" id="count">0</span></button></div>
+</div></header>
+<main id="home">
+<section class="hero"><div class="hero-inner"><div class="hero-copy"><div class="eyebrow">A little tradition, a lot of you</div><h1>Everyday elegance starts here.</h1><p>Discover thoughtfully chosen kurtis that bring comfort, colour and confidence to every day.</p><a class="primary" href="#collection">SHOP THE COLLECTION</a></div></div></section>
+<div class="perks"><div class="perk"><b>FRESH STYLES</b>New looks for every occasion</div><div class="perk"><b>MADE TO FEEL GOOD</b>Comfort meets timeless style</div><div class="perk"><b>PERSONAL SERVICE</b>Order assistance on WhatsApp</div></div>
+<section class="section" id="collection"><div class="section-head"><div class="eyebrow">Find your favourite</div><h2>Shop Our Kurtis</h2><div class="sub">Beautiful styles for everyday moments and special occasions.</div></div>
+<div class="toolbar"><div class="filters"><button class="filter active" onclick="setFilter('All',this)">ALL</button><button class="filter" onclick="setFilter('Everyday',this)">EVERYDAY</button><button class="filter" onclick="setFilter('Printed',this)">PRINTED</button><button class="filter" onclick="setFilter('Festive',this)">FESTIVE</button></div><input class="search" id="search" placeholder="Search kurtis..." oninput="renderProducts()"></div>
+<div class="products" id="products"></div>
+</section>
+<section class="story" id="story"><div class="eyebrow">Welcome to our world</div><h2>Made for your moments</h2><p>At Anisha Fabric, we believe the right outfit should feel as lovely as it looks. Explore our kurti collection and find pieces that feel like you.</p></section>
+</main>
+<footer id="contact"><div class="footbrand">ANISHA FABRIC</div><div class="footnote">For orders and enquiries, connect with us on WhatsApp.<br>© <span id="year"></span> Anisha Fabric. All rights reserved.</div><a class="primary" id="waFooter" href="#" target="_blank">CHAT ON WHATSAPP</a></footer>
+<div class="drawer-bg" id="shade" onclick="closeCart()"></div><aside class="drawer" id="drawer"><div class="drawer-head"><h3 style="font:25px Georgia;margin:0">Your Bag</h3><button class="iconbtn" onclick="closeCart()">×</button></div><div id="cartItems"></div><div class="total"><span>Subtotal</span><span id="subtotal">₹0</span></div><button class="primary" style="width:100%" onclick="checkout()">ORDER ON WHATSAPP</button><p class="meta">Shipping and final availability will be confirmed when you place your order.</p></aside>
+<script>
+const WHATSAPP_NUMBER = ""; // Add your WhatsApp number with country code, e.g. 919876543210
+const products = [
+ {id:1,name:"Blush Bloom Kurti",category:"Everyday",price:899,old:1199,tag:"NEW",img:"https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80"},
+ {id:2,name:"Ivory Grace Kurti",category:"Printed",price:1099,old:1399,tag:"BESTSELLER",img:"https://images.unsplash.com/photo-1583391733958-6c78276477e8?auto=format&fit=crop&w=800&q=80"},
+ {id:3,name:"Rose Garden Kurti",category:"Festive",price:1299,old:1599,tag:"",img:"https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80"},
+ {id:4,name:"Everyday Comfort Kurti",category:"Everyday",price:799,old:999,tag:"",img:"https://images.unsplash.com/photo-1610189012906-4c7c5c1a6f2f?auto=format&fit=crop&w=800&q=80"}
+];
+let filter="All",cart=[];
+const money=n=>"₹"+n.toLocaleString("en-IN");
+function renderProducts(){const q=document.getElementById("search").value.toLowerCase();const list=products.filter(p=>(filter==="All"||p.category===filter)&&(p.name.toLowerCase().includes(q)||p.category.toLowerCase().includes(q)));document.getElementById("products").innerHTML=list.map(p=>`<article class="product"><div class="photo"><img src="${p.img}" alt="${p.name}" loading="lazy"><span class="tag">${p.tag||p.category}</span><button class="add" onclick="addToCart(${p.id})">ADD TO BAG</button></div><div class="pname">${p.name}</div><div class="meta">${p.category} collection</div><div class="price">${money(p.price)} <span class="old">${money(p.old)}</span></div></article>`).join("")||"<p>No kurtis found. Try another search.</p>";}
+function setFilter(f,el){filter=f;document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));el.classList.add("active");renderProducts()}
+function addToCart(id){const item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id,qty:1});renderCart();openCart()}
+function renderCart(){document.getElementById("count").textContent=cart.reduce((s,x)=>s+x.qty,0);document.getElementById("cartItems").innerHTML=cart.length?cart.map(x=>{const p=products.find(y=>y.id===x.id);return `<div class="cartline"><img src="${p.img}" alt=""><div style="flex:1"><b>${p.name}</b><small>${money(p.price)}</small><div class="qty"><button onclick="changeQty(${p.id},-1)">−</button>${x.qty}<button onclick="changeQty(${p.id},1)">+</button></div></div></div>`}).join(""):'<div class="empty">Your bag is waiting for something beautiful.</div>';document.getElementById("subtotal").textContent=money(cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0))}
+function changeQty(id,n){const x=cart.find(i=>i.id===id);x.qty+=n;if(x.qty<=0)cart=cart.filter(i=>i.id!==id);renderCart()}
+function openCart(){document.getElementById("drawer").classList.add("open");document.getElementById("shade").classList.add("open")}
+function closeCart(){document.getElementById("drawer").classList.remove("open");document.getElementById("shade").classList.remove("open")}
+function checkout(){if(!cart.length){alert("Your bag is empty.");return}if(!WHATSAPP_NUMBER){alert("Please add your WhatsApp number in the website code first (WHATSAPP_NUMBER).");return}const lines=cart.map(x=>{const p=products.find(y=>y.id===x.id);return `${p.name} × ${x.qty} — ${money(p.price*x.qty)}`});const total=cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0);const msg=encodeURIComponent("Hello Anisha Fabric! I would like to place an order:\n"+lines.join("\n")+"\nSubtotal: "+money(total));window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+msg,"_blank")}
+document.getElementById("year").textContent=new Date().getFullYear();document.getElementById("waFooter").onclick=e=>{if(!WHATSAPP_NUMBER){e.preventDefault();alert("Please add your WhatsApp number in the website code first (WHATSAPP_NUMBER).")}else e.currentTarget.href="https://wa.me/"+WHATSAPP_NUMBER};renderProducts();renderCart();
+</script>
+</body></html>
